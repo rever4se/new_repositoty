@@ -1,0 +1,54 @@
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="back_bg">
+        <video class="video_bg" loop="loop" autoplay="" muted="">
+            <source src="sources/cosmos.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="main_text">
+        <h1> Модель солнечной системы </h1>
+        <h4> Нажмите на планету для получения информации </h4>
+    </div>
+
+    <div class="svg_line">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <circle fill-opacity="0" r="320" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+            <circle fill-opacity="0" r="147" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+            <circle fill-opacity="0" r="230" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+            <circle fill-opacity="0" r="430" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+            <circle fill-opacity="0" r="590" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+            <circle fill-opacity="0" r="590" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+            <circle fill-opacity="0" r="757" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+            <circle fill-opacity="0" r="837" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+            <circle fill-opacity="0" r="936" cx="49.1%" cy="39%" stroke="skyblue" stroke-opacity="0.3" stroke-width="0.6"/>
+        </svg>
+    </div>
+
+    <form id="form1" class="info_form">
+        <p id="planet_name" class="p_1"> text </p>
+        <p id="planet_info" class="p_2"> text </p>
+    </form>
+
+    <div class="planets">
+        <img id="sun" class="sun" src="sources/planets/sun.png" onclick="click_planet(this.id,0)" alt="">
+        <img id="mercury" class="mercury" src="sources/planets/mercury.png" onclick="click_planet(this.id,1)" alt="">
+        <img id="venus" class="venus" src="sources/planets/venus.png" onclick="click_planet(this.id,2)" alt="">
+        <img id="earth" class="earth" src="sources/planets/earth.png" onclick="click_planet(this.id,3)" alt="">
+        <img id="mars" class="mars" src="sources/planets/mars.png" onclick="click_planet(this.id,4)" alt="">
+        <img id="jupiter" class="jupiter" src="sources/planets/jupiter.png" onclick="click_planet(this.id,5)" alt="">
+        <img id="saturn" class="saturn" src="sources/planets/saturn.png" onclick="click_planet(this.id,6)" alt="">
+        <img id="uran" class="uran" src="sources/planets/uran.png" onclick="click_planet(this.id,7)" alt="">
+        <img id="neptune" class="neptune" src="sources/planets/neptune.png" onclick="click_planet(this.id,8)" alt="">
+    </div>
+
+</body>
+</html>

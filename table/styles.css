@@ -1,0 +1,241 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.svg_line{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.info_form{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 130px;
+    background: rgba(103, 103, 103, 0.24);
+    border-radius: 15px;
+}
+
+.p_1{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Arial Black";
+}
+
+.p_2{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Arial";
+    font-size: 12pt;
+}
+
+.back_bg{
+    position: relative;
+}
+
+.back_bg video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+    background: url(sources/back.jpg) no-repeat #94a233;
+    object-fit: cover;
+}
+
+.main_text{
+    position: relative;
+}
+
+.main_text h1{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Arial Black";
+}
+
+.main_text h4{
+    text-align: center;
+    color: azure;
+    font-family: "Arial";
+}
+
+.sun{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -120px;
+    margin-left: -120px;
+    -webkit-animation: rotation 45s linear infinite;
+}
+
+.mercury{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    transform: translateX(150px);
+    -webkit-animation: mercury_ring 10s linear infinite;
+}
+
+.venus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    transform: translateX(220px);
+    -webkit-animation: venus_ring 15s linear infinite;
+}
+
+.earth{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+    transform: translateX(320px);
+    -webkit-animation: earth_ring 20s linear infinite;
+}
+
+.mars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    transform: translateX(420px);
+    -webkit-animation: mars_ring 18s linear infinite;
+}
+
+.jupiter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -90px;
+    transform: translateX(590px);
+    -webkit-animation: jupiter_ring 35s linear infinite;
+}
+
+.saturn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    transform: translateX(740px);
+    -webkit-animation: saturn_ring 25s linear infinite;
+}
+
+.uran{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+    transform: translateX(830px);
+    -webkit-animation: uran_ring 22s linear infinite;
+}
+
+.neptune{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+    transform: translateX(920px);
+    -webkit-animation: neptune_ring 24s linear infinite;
+}
+
+@-webkit-keyframes mercury_ring {
+    0% {
+        transform:rotate(0deg) translateX(150px) rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg) translateX(150px) rotate(-360deg) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes venus_ring {
+    0% {
+        transform:rotate(0deg) translateX(220px) rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg) translateX(220px) rotate(-360deg) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes earth_ring {
+    0% {
+        transform:rotate(0deg) translateX(320px) rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg) translateX(320px) rotate(-360deg) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes mars_ring {
+    0% {
+        transform:rotate(0deg) translateX(420px) rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg) translateX(420px) rotate(-360deg) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes jupiter_ring {
+    0% {
+        transform:rotate(0deg) translateX(590px) rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg) translateX(590px) rotate(-360deg) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes saturn_ring {
+    0% {
+        transform:rotate(0deg) translateX(740px) rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg) translateX(740px) rotate(-360deg) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes uran_ring {
+    0% {
+        transform:rotate(0deg) translateX(830px) rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg) translateX(830px) rotate(-360deg) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes neptune_ring {
+    0% {
+        transform:rotate(0deg) translateX(920px) rotate(0deg) rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg) translateX(920px) rotate(-360deg) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+
+
